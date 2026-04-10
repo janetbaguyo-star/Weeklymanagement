@@ -1,50 +1,11 @@
 @import "tailwindcss";
 
-:root {
-  --olive: #5c6128;
-  --olive-dark: #3d4119;
-  --olive-light: #a3a86b;
-  --cream: #f7f5f0;
-  --cream-dark: #eae6db;
-  --gold: #b8a94e;
-  --text-dark: #2d2d2d;
-  --text-muted: #6b6b6b;
-  --border: #e0ddd4;
-  --white: #ffffff;
-  --green-accent: #2d6a4f;
-  --blue-accent: #1d6fa5;
-  --orange-accent: #c4743e;
-  --teal-accent: #2a918e;
-  --red-accent: #b5483d;
-  --yellow-bg: #fef9e7;
-  --yellow-border: #e6d76b;
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-@theme inline {
-  --color-olive: var(--olive);
-  --color-olive-dark: var(--olive-dark);
-  --color-olive-light: var(--olive-light);
-  --color-cream: var(--cream);
-  --color-cream-dark: var(--cream-dark);
-  --color-gold: var(--gold);
-  --color-text-dark: var(--text-dark);
-  --color-text-muted: var(--text-muted);
-  --color-border: var(--border);
-  --color-green-accent: var(--green-accent);
-  --color-blue-accent: var(--blue-accent);
-  --color-orange-accent: var(--orange-accent);
-  --color-teal-accent: var(--teal-accent);
-  --color-red-accent: var(--red-accent);
-  --color-yellow-bg: var(--yellow-bg);
-  --color-yellow-border: var(--yellow-border);
-}
-
-body {
-  background: var(--cream);
-  color: var(--text-dark);
-  font-family: 'Inter', Arial, Helvetica, sans-serif;
-}
-
-input[type="date"]::-webkit-calendar-picker-indicator {
-  cursor: pointer;
+@layer base {
+  body {
+    @apply bg-gray-50 text-gray-900;
+  }
 }
