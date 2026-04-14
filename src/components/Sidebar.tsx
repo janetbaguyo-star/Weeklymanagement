@@ -16,10 +16,12 @@ export default function Sidebar() {
   return (
     <div className="w-64 bg-white dark:bg-gray-800 border-r border-gray-200 dark:border-gray-700 flex-col justify-between hidden md:flex h-full">
       <div>
-        <div className="h-16 flex items-center px-6 border-b border-gray-200 dark:border-gray-700">
-          <h1 className="text-xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
-            Weekly Report
-          </h1>
+        <div className="h-24 flex items-center px-6 border-b border-gray-200 dark:border-gray-700">
+          <img 
+            src="/logo.jpg" 
+            alt="Olive Green Holding Logo" 
+            className="h-16 w-auto object-contain mx-auto" 
+          />
         </div>
         <nav className="p-4 space-y-1">
           {links.map((link) => {
